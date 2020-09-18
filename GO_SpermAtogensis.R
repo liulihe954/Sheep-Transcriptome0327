@@ -43,7 +43,7 @@ plot(sample_Tree_GT, main = "Sample clustering to detect outliers GT", sub="", x
                  ################################################################################################
 ### 1.Define calculation function - get_adjmat(dataset, rthreshold, pthreshold) --- get unweighted adj matrx --- use PearsonCor
 require(ppcor)
-# get_NC_cor = function(datExpr1,datExpr2,r_thres,p_thres){
+get_NC_cor = function(datExpr1,datExpr2,r_thres,p_thres){
   #calcu of matrx1
   cormatr1 <- cor(datExpr1)
   adjmatr1 = matrix(1,ncol(datExpr1),ncol(datExpr1))
